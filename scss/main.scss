@@ -17,28 +17,27 @@ body {
 	top: 50%;
 	left: 50%;
 	width: 80%;
-
-	max-width: 375px;
+	max-width: 300px;
 	transform: translate(-50%, -50%);
 	background-color: hsl(0, 0%, 100%);
-	border-radius: 20px;
+	border-radius: 15px;
 	box-shadow: 1px 1px 10px #d3d3d3;
 	// padding: 15px;
 
 	.qr__img {
 		// position: relative;
-		width: 350px;
-		height: 350px;
+		width: 250px;
+		height: 250px;
 		background-image: url(/images/image-qr-code.png);
 		background-size: contain;
 		background-repeat: no-repeat;
-		border-radius: 20px;
-		margin-top: 12px;
+		border-radius: 15px;
+		margin-top: 20px;
 		margin-bottom: 20px;
 	}
 	.bold {
 		text-align: center;
-		font-size: 30px;
+		font-size: 25px;
 		font-weight: 700;
 		color: hsl(218, 44%, 22%);
 	}
@@ -48,7 +47,7 @@ body {
 		font-weight: 400;
 		color: hsl(220, 15%, 55%);
 		text-align: center;
-		margin: 30px;
+		margin: 20px;
 	}
 }
 
@@ -61,5 +60,39 @@ body {
 /// MEDIA
 
 @media (min-width: 492px) {
-    
+	.wrapper {
+		width: 375px;
+	}
+	.qr__img {
+		width: 350px;
+		height: 350px;
+		margin-bottom: 20px;
+	}
+	.bold {
+		font-size: 30px;
+	}
+
+	.text {
+		font-size: 15px;
+		margin: 30px;
+	}
+}
+
+@media (min-width: 768px) {
+	.wrapper {
+		width: 500px;
+	}
+	.qr__img {
+		width: 450px;
+		height: 450px;
+		margin-bottom: 25px;
+	}
+	.bold {
+		font-size: 35px;
+	}
+
+	.text {
+		font-size: 20px;
+		margin: 35px;
+	}
 }
